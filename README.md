@@ -12,10 +12,10 @@ Pre requisite <strong>gem rmagick</strong>
 <h1>Installation:</h1>
 <ul>
 <li> Place captcha background image named(iq_captcha_background.png) in your project's public folder</li>
-<li> in Gemfile, gem 'iq_captcha' and run bundle install</li>
+<li> in Gemfile, gem 'iq_captcha' and run <code>bundle install</code></li>
 <li> in routes.rb, <code>mount IqCaptcha::Engine, :at => '/iq_captcha'</code> </li>
 
-<li> Now browse for testing, for exaample, http://localhost:3000/iq_captcha, if the captcha comes then it is OK for the test</li>
+<li> Now browse for testing, for exaample, <code>http://localhost:3000/iq_captcha</code>, if the captcha comes then it is OK for the test</li>
 
 <li> To use the captcha in your project's view 
 <pre><code>
