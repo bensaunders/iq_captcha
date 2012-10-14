@@ -17,7 +17,7 @@ Installation:
 4. Now browse for testing, for exaample, http://localhost:3000/iq_captcha, if the captcha comes then it is OK for the test
 
 5. to use the captcha in your project's view 
-<img src="/iq_captcha?t=<%= Time.now.to_i %>&pointsize=25&color_code=ffffff"> <input type="text" name="iq_captcha_result" />
+&lt;img src="/iq_captcha?t=<%= Time.now.to_i %>&pointsize=25&color_code=ffffff"> &lt;input type="text" name="iq_captcha_result" /&gt;
 
 6. in controller,
  if Captcha::valid?(session,params)
