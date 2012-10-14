@@ -15,11 +15,11 @@ Pre requisite <strong>gem rmagick</strong>
 <li> in Gemfile, <code>gem 'iq_captcha' or gem 'iq_captcha', :git => 'git@github.com:barek2k2/iq_captcha.git' </code> and run <code>bundle install</code></li>
 <li> in routes.rb, <code>mount IqCaptcha::Engine, :at => '/iq_captcha'</code> </li>
 
-<li> Now browse for testing, for exaample, <code>http://localhost:3000/iq_captcha</code>, if the captcha comes then it is OK for the test</li>
+<li> Now restart your server and browse for testing, for exaample, <code>http://localhost:3000/iq_captcha</code>, if the captcha comes then it is OK for the test</li>
 
 <li> To use the captcha in your project's view 
 <pre><code>
-&lt;img src="/iq_captcha?t=<%= Time.now.to_i %>&pointsize=25&color_code=ffffff"&gt;
+&lt;img src="/iq_captcha?t=&lt;%= Time.now.to_i %&gt;&pointsize=25&color_code=ffffff"&gt;
 &lt;input type="text" name="iq_captcha_result" /&gt;
 </code></pre>
 
