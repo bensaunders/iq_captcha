@@ -17,7 +17,7 @@ Pre requisite <strong>gem rmagick</strong><br />
 4. Now browse for testing, for exaample, <code>http://localhost:3000/iq_captcha</code>, if the captcha comes then it is OK for the test<br />
 
 5. to use the captcha in your project's view <br />
-<code>&lt;img src="/iq_captcha?t=<%= Time.now.to_i %>&pointsize=25&color_code=ffffff" /&gt; &lt;input type="text" name="iq_captcha_result" /&gt;</code><br />
+<code>&lt;img src="/iq_captcha?t=<%= Time.now.to_i %>&pointsize=25&color_code=ffffff" /&gt; <br /> &lt;input type="text" name="iq_captcha_result" /&gt;</code><br />
 
 6. in controller,<br />
  <code>
