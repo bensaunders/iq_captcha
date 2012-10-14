@@ -26,9 +26,9 @@ Pre requisite <strong>gem rmagick</strong>
 <li> In controller,
  <pre><code>
  if Captcha::valid?(session,params)
- # You are human being
+   # You are human being
  else
-       # You are not human
+   # You are not human
  end
  </code></pre>
 <li> You are Done</li>
